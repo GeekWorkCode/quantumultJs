@@ -3,12 +3,16 @@ if (app.course_state != null){
 
 var bookmark = JSON.parse(app.course_state.bookmark);
 
+if (app.course_state.queues != null){
+
 if(app.course_state.queues.exercises == 0) {
 app.course_state.queues.exercises = 50;
 };
 if(app.course_state.queues.new == 0) {
 app.course_state.queues.new = 49;
 };
+
+}
 
     if (bookmark.questions.new_unit_sn == -1) {
         bookmark.questions.new_unit_sn = 1034;
