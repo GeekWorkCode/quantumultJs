@@ -15,6 +15,6 @@ app.course_state.queues.new = 49;
     }
     bookmark.subscription_limited = false;
     bookmark = JSON.stringify(bookmark);
-    app.course_state.bookmark = bookmark
+    app.course_state.bookmark = bookmark;
 
 $done({ body: JSON.stringify(app) });
