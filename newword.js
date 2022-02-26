@@ -3,7 +3,7 @@ if (app.course_state != null){
 
 var bookmark = JSON.parse(app.course_state.bookmark);
 
-if (app.course_state.queues != undefined){
+if (app.course_state.hasOwnProperty("queues") == true){
 
 if(app.course_state.queues.exercises == 0) {
 app.course_state.queues.exercises = 50;
