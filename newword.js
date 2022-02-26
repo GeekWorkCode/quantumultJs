@@ -5,8 +5,9 @@ app.course_state.queues.exercises = 50;
 if(app.course_state.queues.new == 0) {
 app.course_state.queues.new = 49;
 };
+if (app.course_state != null){
 
- var bookmark = JSON.parse(app.course_state.bookmark);
+var bookmark = JSON.parse(app.course_state.bookmark);
 
     if (bookmark.questions.new_unit_sn == -1) {
         bookmark.questions.new_unit_sn = 1034;
@@ -17,4 +18,6 @@ app.course_state.queues.new = 49;
     bookmark = JSON.stringify(bookmark);
     app.course_state.bookmark = bookmark;
 
+}
+ 
 $done({ body: JSON.stringify(app) });
