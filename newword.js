@@ -5,7 +5,7 @@ if (app.course_state){
 var bookmark = JSON.parse(app.course_state.bookmark);
 
 if(app.course_state.queues.new == 0) {
-app.course_state.queues.new = 49;
+app.course_state.queues.new = 39;
 };
 
 if(app.course_state.queues.exercises == 0) {
@@ -13,7 +13,7 @@ app.course_state.queues.exercises = 328;
 };
 
 if(app.course_state.queues.repeats_waiting == 0) {
-app.course_state.queues.repeats_waiting = 328;
+app.course_state.queues.repeats_waiting = 39;
 };
 
 
