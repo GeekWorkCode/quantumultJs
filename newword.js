@@ -12,6 +12,11 @@ if(app.course_state.queues.exercises == 0) {
 app.course_state.queues.exercises = 328;
 };
 
+if(app.course_state.queues.repeats_waiting == 0) {
+app.course_state.queues.repeats_waiting = 328;
+};
+
+
     if (bookmark.questions.new_unit_sn == -1) {
         bookmark.questions.new_unit_sn = 1034;
         bookmark.questions.variation_new_unit_sns = { '356933e0-836e-4603-82ac-86e692c9b0c0': 1034 };
