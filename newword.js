@@ -12,6 +12,9 @@ if(app.course_state.queues.new == 0) {
 app.course_state.queues.new = 49;
 };
 
+if(app.course_state.queues.exercises == 0) {
+app.course_state.queues.exercises = 328;
+};
 }
 
     if (bookmark.questions.new_unit_sn == -1) {
