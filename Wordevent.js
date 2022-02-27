@@ -1,5 +1,5 @@
 const url = $request.url;
-var body = $response.body;
+var body = $request.body;
 const path1 = "/1.0/events";
 if (url.indexOf(path1) != -1) {
   var obj = JSON.parse(body);
